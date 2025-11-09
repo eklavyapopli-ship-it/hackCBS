@@ -1,7 +1,6 @@
-import React from 'react';
 import { useWallet } from '../hooks/useWallet';
 
-const ConnectWallet: React.FC = () => {
+export default function ConnectWallet() {
   const { wallet, connectWallet } = useWallet();
 
   const formatAddress = (address: string) => {
@@ -28,7 +27,5 @@ const ConnectWallet: React.FC = () => {
       Connect Wallet
     </button>
   );
-};
-
-export default ConnectWallet;
+}
 
